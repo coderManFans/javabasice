@@ -20,7 +20,7 @@ import java.lang.reflect.Modifier;
  */
 public class JavaSsistTest {
 
-    @Test
+    /*@Test
     public void test() throws NotFoundException, CannotCompileException {
         ClassPool classPool = ClassPool.getDefault();
         CtClass ctClass = classPool.makeClass("com.fans.javassis.demo1.Test");
@@ -96,10 +96,10 @@ public class JavaSsistTest {
         ctClass.addMethod(CtNewMethod.getter("getValue",ctField));
 
         //为类设置构造器(这里不能设置无参构造方法)
-        /*CtConstructor ctConstructor = new CtConstructor(null,ctClass);
+        *//*CtConstructor ctConstructor = new CtConstructor(null,ctClass);
         ctConstructor.setModifiers(Modifier.PUBLIC);
         ctConstructor.setBody("{}");
-        ctClass.addConstructor(ctConstructor);*/
+        ctClass.addConstructor(ctConstructor);*//*
 
         //参数构造器
         CtConstructor ctConstructor = new CtConstructor(new CtClass[]{classPool.get(String.class.getName())},ctClass);
@@ -157,6 +157,6 @@ public class JavaSsistTest {
         testProxy.setName("Alvin");
         testProxy.setValue("1000");
         testProxy.getValue();
-    }
+    }*/
 
 }
